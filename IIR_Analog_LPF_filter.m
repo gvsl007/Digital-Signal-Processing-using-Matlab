@@ -13,7 +13,7 @@
  [n2 wn2]=cheb1ord(w1,w2,rp,rs);
  [b2 a2]=cheby1(n2,rp,wn2);
  [n3 wn3]=cheb2ord(w1,w2,rp,rs);
- [b3 a3]=cheby2(n3,rp,wn3);
+ [b3 a3]=cheby2(n3,rs,wn3);
  w=0:0.01:pi;
  [h1 om1]=freqz(b1,a1,w);
  m1=20*log10(abs(h1));

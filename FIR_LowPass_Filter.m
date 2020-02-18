@@ -75,7 +75,7 @@ axis([0 1 -100 10]);
 %Using Kaiser Window
 
 y6=kaiser(n1,5);
-b6=fir1(n,w1,y6);
+b6=fir1(n,w1,y6); 
 [h6 om]=freqz(b6,1,256);
 m6=20*log10(abs(h6));
 subplot(2,3,6);
